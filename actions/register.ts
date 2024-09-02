@@ -1,10 +1,8 @@
 "use server";
 
 import bcrypt from "bcrypt"
-
 import * as z from "zod";
 import prisma from "@/lib/db";
-
 import { RegisterSchema } from "@/schemas";
 
 export const register = async (values: z.infer<typeof RegisterSchema>) => {
